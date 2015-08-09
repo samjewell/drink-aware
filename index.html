@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--manifest="drink-informed-manifest.appcache"-->
-<html
+<html 
 class="welcomeBG">
   <head>
     <meta charset="utf-8" />
@@ -8,14 +8,25 @@ class="welcomeBG">
     <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
     <link rel="stylesheet" href="assets/styles.css" />
     <link rel="stylesheet" type="text/css" href="add-to-homescreen/style/addtohomescreen.css">
+    <script src="js/vendor/angular.min.js"></script>
     <script src="add-to-homescreen/src/addtohomescreen.js"></script>
     <script>
       addToHomescreen();
     </script>
   </head>
 
-  <body>
+  <body ng-app="DrinkInformedApp">
     <a class="welcome" href="1setLimits.html">Page2</a>
+    <main ng-controller="MainController">
+      {{ 1 + 1 }}
+    </main>
+    
+    
+    <!-- Modules -->
+    <script src="js/app.js"></script>
+
+    <!-- Controllers -->
+    <script src="js/controllers/MainController.js"></script>
   </body>
 </html>
 
