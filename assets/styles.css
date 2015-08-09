@@ -1,0 +1,47 @@
+/*-------------------------
+Simple reset
+--------------------------*/
+* {
+    margin:0;
+    padding:0;
+}
+
+/*-------------------------
+Background images
+--------------------------*/
+
+html {
+    width: 1024px;
+    height: 768px;
+}
+
+.welcomeBG { 
+    background: url(index.jpg) no-repeat;
+    background-size: 1024px 768px;
+}
+.page1 { 
+    background: url(1setLimits.jpg) no-repeat; 
+}
+/*----------------------------
+seethru links
+-----------------------------*/
+a {
+    position: absolute;
+    display: block;
+    background: none;
+    border: 1px solid black;
+    opacity: 0.0;
+}
+.welcome {
+    top: 596px;
+    left: 820px;
+    width: 110px;
+    height: 110px;
+}
+.goHome {
+    left: 935px;
+    width: 46px;
+    top: 20px;
+    height: 40px;
+    opacity: 0.2;
+}

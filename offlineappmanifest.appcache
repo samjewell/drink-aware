@@ -1,0 +1,14 @@
+CACHE MANIFEST
+# mywebapp.appcache v1
+# this is my cache manifest 
+assets/styles.css
+assets/index.jpg
+assets/1setLimits.jpg
+index.html
+1setLimits.html
+
+# Use from network if available
+NETWORK:
+assets/styles.css
+index.html
+1setLimits.html
