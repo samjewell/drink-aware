@@ -26,3 +26,9 @@ Notes
 
 - put every file under NETWORK as well as under CACHED
 - once the html file is cached, how can I get it to reload changes to that html file?
+
+
+Angular
+
+- the component that gets repeated is the ( ! ) ... This should be the `directive` so it can be repeated easily.
+- the content that needs to be switched in/out is the text and image on the right. This should be in an array (of objects) on the controller!
