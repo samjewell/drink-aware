@@ -32,3 +32,5 @@ Angular
 
 - the component that gets repeated is the ( ! ) ... This should be the `directive` so it can be repeated easily.
 - the content that needs to be switched in/out is the text and image on the right. This should be in an array (of objects) on the controller!
+- The variable which holds the state, and communicates between the directive and the array index, should also live on the controller (much like our route controllers)
+- Keep going with the copying of MoveLog:- https://www.codecademy.com/en/courses/learn-angularjs/projects/angularjs_move-log
