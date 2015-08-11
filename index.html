@@ -18,7 +18,10 @@ class="welcomeBG">
   <body ng-app="DrinkInformedApp">
     <a class="welcome" href="1setLimits.html">Page2</a>
     <main ng-controller="MainController">
-      {{ 1 + 1 }}
+      <h2>Mental health</h2>
+      <p>{{ conditions[0].para1 }}</p>
+      <p>{{ conditions[0].para2 }}</p>
+      <img ng-src="{{ conditions[0].icon }}">
     </main>
     
     
