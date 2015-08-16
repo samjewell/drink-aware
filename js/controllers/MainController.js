@@ -1,4 +1,6 @@
 app.controller('MainController', ['$scope', function($scope) {
+  $scope.activeCondition = 1;
+  
   $scope.conditions = [
     {
       name: 'Mental Health',
@@ -25,13 +27,4 @@ app.controller('MainController', ['$scope', function($scope) {
       icon: 'img/fatty-liver.jpg'
     }
   ];
-
-	$scope.increase = function(index) {
-		$scope.conditions[index].count += 1;
-	}
-	
-	$scope.decrease = function(index) {
-		$scope.conditions[index].count -= 1;
-	}
-    
 }]);

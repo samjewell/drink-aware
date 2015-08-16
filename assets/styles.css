@@ -25,7 +25,7 @@ html {
 /*----------------------------
 seethru links
 -----------------------------*/
-a {
+a.welcome, a.goHome {
     position: absolute;
     display: block;
     background: none;

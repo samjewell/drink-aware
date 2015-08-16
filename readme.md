@@ -18,8 +18,8 @@ ToDo
 
 - [X] try with multiple URLs (just no params)
 - [X] get it onto Github pages
-- [ ] get the 'save to home screen' icon working
-- [ ] learn how to clear the cache on iOS. By removing the browser (last resort)?
+- [X] get the 'save to home screen' hint working
+- [X] learn how to clear the cache on iOS? It's in the OS settings, but can also delete and reinstall the browser!
 
 
 Notes
@@ -27,10 +27,36 @@ Notes
 - put every file under NETWORK as well as under CACHED
 - once the html file is cached, how can I get it to reload changes to that html file?
 
+- Scaling will reduce pixel perfection, but use the whole screen size
+- Not scaling will keep pixel perfection, but add extra white around the edge :-(
+- Is it more important it looks great in the show? Or on the screens of the nurses?
+  - **Probably the former**
+  - if so, **scale down from native resolution?**
+
 
 Angular
 
-- the component that gets repeated is the ( ! ) ... This should be the `directive` so it can be repeated easily.
-- the content that needs to be switched in/out is the text and image on the right. This should be in an array (of objects) on the controller!
-- The variable which holds the state, and communicates between the directive and the array index, should also live on the controller (much like our route controllers)
-- Keep going with the copying of MoveLog:- https://www.codecademy.com/en/courses/learn-angularjs/projects/angularjs_move-log
+- [X] Add the rest of the copy on the homescreen
+- [ ] Add some condition images
+- [ ] Add the bang image
+- [ ] Add background image
+- [ ] Style + layout the text
+- [ ] Get layouts with and without Safari header
+- [ ] Read Shedden's notes:- use flexbox to position the thing into the centre
+  - https://speakerdeck.com/jamesshedden/flexbox-is-cool-and-fun
+- [ ] Centre align with flexbox - **a separate app**?
+- [ ] **Write instructions for Jonny and Lizzie**
+  - [ ] Resolution to be smaller of 1024 x 768 and 1024 x 671
+  - [ ] Use Illustrator. Snap to nearest pixel. Use integer values for pixel widths for strokes
+  - [ ] Double resolution to 2048 x ??? before export
+  - [ ] Illustrate what I mean with images
+  
+- [ ] try scaling down from native resolution (with flexbox?)
+
+- [ ] Build a cover page (or two)
+- [ ] How to link from the cover to the 4 detail pages?
+
+- [X] Repeat the bang, make it clickable (hooked up to controller) and stylable
+- [X] Add array of text and images to controller, show on screen
+
+- [ ] Bang and Info pane into directives?
