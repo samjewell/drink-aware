@@ -2,9 +2,155 @@
 Simple reset
 --------------------------*/
 * {
-    margin:0;
-    padding:0;
+  margin:0;
+  padding:0;
+  font-family: sans-serif;
+  opacity: 1;
 }
+
+/*-------------------------
+Header
+--------------------------*/
+.header {
+  color: white;
+  background-color: #3990ce;
+  width: 500px;
+  font-size: 40px;
+  font-weight: 200;
+  padding: 0.1em 0.2em
+}
+
+.header--sub {
+  width: 410px;
+  font-size: 28px;
+}
+
+.header--nav {
+  float: right;
+  width: 190px;
+  text-decoration: none;
+}
+
+/*-------------------------
+InfoPane
+--------------------------*/
+.info {
+  margin-top: 32px;
+  margin-left: 130px;
+  width: 530px;
+  height: 370px;
+  border: 2px solid #f38f2e;
+  border-radius: 30px;
+  padding: 20px;
+  box-sizing: border-box;
+  float: right;
+}
+
+
+.info__head {
+  color: white;
+  font-weight: 200;
+  background-color: #f38f2e;
+  padding: 0.2em 1em;
+  margin-left: -40px;
+}
+
+.info__para {
+  margin-top: 30px;
+  font-size: 20px;
+/*  float: left;*/
+}
+
+.info__icon {
+  width: 164px;
+  float: right;
+  margin: 30px 0 20px 0;
+}
+
+
+
+/*-------------------------
+Human
+--------------------------*/
+.human {
+  float: left;
+  margin-top: 32px;
+  margin-left: 10px;
+  position: relative;
+}
+
+.img {
+  width: 272px;
+  height: 533px;
+}
+
+.bang {
+  background: url(bang@2x.png) no-repeat;
+  background-size: 30px 30px;
+  color: rgba(0, 0, 0, 0);
+  width: 30px;
+  height: 30px;
+  border: 0;
+  position: absolute;
+  cursor: pointer;
+}
+
+.bang.is-active {
+  background: url(bang-orange@2x.png) no-repeat;
+  background-size: 30px 30px;
+}
+
+.bang--0 {
+  top: 15px;
+  left: 105px;
+}
+
+.bang--1 {
+  top: 360px;
+  left: 200px;
+}
+
+.bang--2 {
+  top: 440px;
+  left: 108px;
+}
+
+
+/*-------------------------
+Footer
+--------------------------*/
+
+.footer {
+  color: white;
+  float: right;
+  text-transform: uppercase;
+  padding-top: 50px;
+}
+
+.footer--logo{
+  background-color: #3990ce;
+  font-size: 23px;
+  width: 128px;
+  padding: 0.1em 0.2em;
+}
+
+.footer--logo-sub{
+  background-color: #f38f2e;
+  font-size: 10px;
+  width: 110px;
+  margin-top: 14px;
+  padding: 0.3em 0.6em;
+}
+
+
+
+/*-------------------------
+Utils
+--------------------------*/
+.u-padding-Al {
+  padding: 35px 40px;
+}
+
 
 /*-------------------------
 Background images
@@ -16,7 +162,7 @@ html {
 }
 
 .welcomeBG { 
-    background: url(index.jpg) no-repeat;
+/*    background: url(index.jpg) no-repeat;*/
     background-size: 1024px 768px;
 }
 .page1 { 

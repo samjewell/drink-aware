@@ -15,33 +15,46 @@ class="welcomeBG">
     </script>
   </head>
 
-  <body ng-app="DrinkInformedApp">
-    <a class="welcome" href="1setLimits.html">Page2</a>
-    <nav>
-      <a href="index.html">Back to start</a>
-    </nav>
-    <h1>You scored 30 out of 40</h1>
-    <p>
-      This means you are at slight risk of developing the following conditions:
-    </p>
+  <body ng-app="DrinkInformedApp"
+        class="u-padding-Al">
+    <header>
+      <a class="welcome" href="1setLimits.html">Page2</a>
+      <nav >
+        <a href="index.html"
+           class="header header--sub header--nav">
+          Back to start
+        </a>
+      </nav>
+      <h1 class="header">You scored 30 out of 40</h1>
+      <p class="header header--sub">
+        This means you are at slight risk of developing the following conditions:
+      </p>
+    </header>
     
     <main ng-controller="MainController">
-      <button ng-repeat="condition in conditions"
-              ng-click="$parent.activeCondition = $index"
-              class="{{'bang' + $index}}"
-              ng-class="{'is-active': $parent.activeCondition === $index}">
-        ( ! )
-      </button>
-
-      <h2>{{ conditions[activeCondition].name }} - condition number {{activeCondition}}</h2>
-      <p>{{ conditions[activeCondition].para1 }}</p>
-      <p>{{ conditions[activeCondition].para2 }}</p>
-      <img ng-src="{{ conditions[activeCondition].icon }}">
+      <div class="human">
+        <img src="assets/body-only2@2x.png"
+             class="img">
+        <button ng-repeat="condition in conditions"
+                ng-click="$parent.activeCondition = $index"
+                class="bang {{'bang--' + $index}}"
+                ng-class="{'is-active': $parent.activeCondition === $index}">
+          ( ! )
+        </button>
+      </div>
+      
+      <div class="info">
+        <h2 class="info__head">{{ conditions[activeCondition].name }}</h2>
+        <img ng-src="{{ conditions[activeCondition].icon }}"
+             class="info__icon">
+        <p class="info__para">{{ conditions[activeCondition].para1 }}</p>
+        <p class="info__para">{{ conditions[activeCondition].para2 }}</p>
+      </div>
     </main>
     
-    <footer>
-      <p>Drink informed</p>
-      <p>Alcohol harm risk</p>
+    <footer class="footer">
+      <p class="footer--logo">Drink informed</p>
+      <p class="footer--logo-sub">Alcohol harm risk</p>
     </footer>
     
     <!-- Modules -->
