@@ -46,7 +46,6 @@ InfoPane
   float: right;
 }
 
-
 .info__head {
   color: white;
   font-weight: 200;
@@ -67,8 +66,6 @@ InfoPane
   margin: 30px 0 20px 0;
 }
 
-
-
 /*-------------------------
 Human
 --------------------------*/
@@ -87,9 +84,10 @@ Human
 .bang {
   background: url(bang@2x.png) no-repeat;
   background-size: 30px 30px;
+  background-position: center; 
   color: rgba(0, 0, 0, 0);
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   border: 0;
   position: absolute;
   cursor: pointer;
@@ -98,11 +96,12 @@ Human
 .bang.is-active {
   background: url(bang-orange@2x.png) no-repeat;
   background-size: 30px 30px;
+  background-position: center; 
 }
 
 .bang--0 {
-  top: 15px;
-  left: 105px;
+  top: 10px;
+  left: 95px;
 }
 
 .bang--1 {
@@ -111,15 +110,13 @@ Human
 }
 
 .bang--2 {
-  top: 440px;
-  left: 108px;
+  top: 435px;
+  left: 103px;
 }
-
 
 /*-------------------------
 Footer
 --------------------------*/
-
 .footer {
   color: white;
   float: right;
@@ -130,7 +127,7 @@ Footer
 .footer--logo{
   background-color: #3990ce;
   font-size: 23px;
-  width: 128px;
+  width: 122px;
   padding: 0.1em 0.2em;
 }
 
@@ -142,8 +139,6 @@ Footer
   padding: 0.3em 0.6em;
 }
 
-
-
 /*-------------------------
 Utils
 --------------------------*/
@@ -151,11 +146,9 @@ Utils
   padding: 35px 40px;
 }
 
-
 /*-------------------------
 Background images
 --------------------------*/
-
 html {
     width: 1024px;
     height: 768px;
