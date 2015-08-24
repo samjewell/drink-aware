@@ -5,7 +5,6 @@ Simple reset
   margin:0;
   padding:0;
   font-family: 'Open Sans', sans-serif;
-/*  opacity: 0.7;*/
 }
 
 /*-------------------------
@@ -54,7 +53,6 @@ Header
   width: 115px;
   text-decoration: none;
   padding: 0;
-/*  padding: 0.7em 0.5em;*/
 }
 
 /*-------------------------
@@ -156,7 +154,6 @@ Index
   width: 225px;
   display: inline-block;
   padding: 0.2em 0.6em; 
-/*  background-color: #4090cb;*/
   background: linear-gradient(to right, #3990ce 0%,#398ecf 32%,#3a85d3 55%,#3c72dc 78%,#4053eb 100%);
 }
 
@@ -182,42 +179,13 @@ Start
 }
 
 /*-------------------------
-Background images (can be deleted)
+Background
 --------------------------*/
 html {
   width: 1024px;
   height: 768px;
 }
 
-.welcomeBG { 
-/*  background: url(details-01.jpg) no-repeat;*/
-  background-size: 1024px 670px;
-  opacity: 1;
-}
-
-/*----------------------------
-seethru links (can be deleted)
------------------------------*/
-a.welcome, a.goHome {
-    position: absolute;
-    display: block;
-    background: none;
-    border: 1px solid black;
-    opacity: 0.0;
-}
-.welcome {
-    top: 596px;
-    left: 820px;
-    width: 110px;
-    height: 110px;
-}
-.goHome {
-    left: 935px;
-    width: 46px;
-    top: 20px;
-    height: 40px;
-    opacity: 0.2;
-}
 /*-------------------------
 Human
 --------------------------*/
@@ -230,7 +198,6 @@ Human
 
 .img {
   width: 275px;
-/*  height: 533px;*/
 }
 
 .bang {
