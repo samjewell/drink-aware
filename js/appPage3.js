@@ -59,10 +59,10 @@ angular
       icon: 'assets/icons/Stroke@2x.png'
     },
     {
-      name: 'Arrythmia',
-      para1: 'An Arrythmia is when your heart is beating irregularly; this can cause you to feel dizzy, weak and even to lose consciousness. You will also have chest pains and palpitations.',
+      name: 'Arrhythmia',
+      para1: 'An Arrhythmia is when your heart is beating irregularly; this can cause you to feel dizzy, weak and even to lose consciousness. You will also have chest pains and palpitations.',
       para2: '',
-      icon: 'assets/icons/Arrythmia@2x.png'
+      icon: 'assets/icons/Arrhythmia@2x.png'
     },
     {
       name: 'Alcohol Hepatitis',
