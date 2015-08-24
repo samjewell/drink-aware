@@ -13,7 +13,7 @@ Header
 --------------------------*/
 .header {
   color: white;
-  background-color: #3990ce;
+  background-color: #4090cb;
   width: 500px;
   font-size: 40px;
   font-weight: 200;
@@ -39,7 +39,7 @@ InfoPane
   margin-left: 130px;
   width: 530px;
   height: 370px;
-  border: 2px solid #f38f2e;
+  border: 2px solid #ef8e3b;
   border-radius: 30px;
   padding: 20px;
   box-sizing: border-box;
@@ -49,7 +49,7 @@ InfoPane
 .info__head {
   color: white;
   font-weight: 200;
-  background-color: #f38f2e;
+  background-color: #ef8e3b;
   padding: 0.2em 1em;
   margin-left: -40px;
 }
@@ -195,14 +195,14 @@ Footer
 }
 
 .footer--logo{
-  background-color: #3990ce;
+  background-color: #4090cb;
   font-size: 23px;
   width: 122px;
   padding: 0.1em 0.2em;
 }
 
 .footer--logo-sub{
-  background-color: #f38f2e;
+  background-color: #ef8e3b;
   font-size: 10px;
   width: 110px;
   margin-top: 14px;
