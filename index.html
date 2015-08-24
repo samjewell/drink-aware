@@ -45,14 +45,22 @@ class="welcomeBG">
         </button>
       </div>
       
-      <div class="info">
-        <div class="info__head">
-          <h2 class="info__head__text">{{ conditions[activeCondition].name }}</h2>
+      <div ng-if="activeCondition >= 0">
+        <div class="info">
+          <div class="info__head">
+            <h2 class="info__head__text">{{ conditions[activeCondition].name }}</h2>
+          </div>
+          <img ng-src="{{ conditions[activeCondition].icon }}"
+               class="info__icon">
+          <p class="info__para">{{ conditions[activeCondition].para1 }}</p>
+          <p class="info__para">{{ conditions[activeCondition].para2 }}</p>
         </div>
-        <img ng-src="{{ conditions[activeCondition].icon }}"
-             class="info__icon">
-        <p class="info__para">{{ conditions[activeCondition].para1 }}</p>
-        <p class="info__para">{{ conditions[activeCondition].para2 }}</p>
+      </div>
+      <div ng-if="activeCondition === -1"
+           class="info-placeholder">
+        <strong>Click on the ! to see the different conditions
+your drinking habits are putting you at risk of
+developing.</strong>
       </div>
     </main>
     

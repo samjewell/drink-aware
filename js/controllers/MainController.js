@@ -1,5 +1,5 @@
 app.controller('MainController', ['$scope', function($scope) {
-  $scope.activeCondition = 0;
+  $scope.activeCondition = -1;
   
   $scope.conditions = [
     {
