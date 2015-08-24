@@ -1,4 +1,6 @@
-app.controller('MainController', ['$scope', function($scope) {
+angular
+.module("Page", [])
+.controller('Controller', ['$scope', function($scope) {
   $scope.activeCondition = -1;
   
   $scope.conditions = [

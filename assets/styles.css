@@ -5,16 +5,31 @@ Simple reset
   margin:0;
   padding:0;
   font-family: 'Open Sans', sans-serif;
-  opacity: 1;
+/*  opacity: 0.7;*/
 }
 
 /*-------------------------
 Utils
 --------------------------*/
+.u-padding-Axxl {
+  padding: 72px 210px;
+}
+
+.u-padding-Axl {
+  padding: 45px 45px;
+}
+
 .u-padding-Al {
   padding: 36px 36px;
 }
 
+.u-margin-Txxl {
+  margin-top: 70px;
+}
+
+.u-float-right {
+  float: right; 
+}
 /*-------------------------
 Header
 --------------------------*/
@@ -77,6 +92,10 @@ InfoPane
   line-height: 138%;
 }
 
+.info__para.u-no-clear {
+  clear: none;
+}
+
 .info__icon {
   width: 175px;
   float: right;
@@ -94,6 +113,111 @@ InfoPane
   float: left;
 }
 
+/*-------------------------
+Footer
+--------------------------*/
+.footer {
+  color: white;
+  float: right;
+  text-transform: uppercase;
+  padding-top: 432px;
+}
+
+.footer--logo {
+  background-color: #4090cb;
+  font-size: 20px;
+  width: 122px;
+  padding: 0em 0.3em;
+  line-height: 100%;
+}
+
+.footer--logo-sub {
+  background-color: #ef8e3b;
+  font-size: 9px;
+  width: 93px;
+  margin-top: 8px;
+  padding: 0.3em 0.6em; 
+}
+
+/*-------------------------
+Index
+--------------------------*/
+.logo-big {
+  width: 639px;
+  height: 400px;
+  margin-bottom: 30px;
+}
+
+.long-link {
+  font-size: 27px;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  width: 225px;
+  display: inline-block;
+  padding: 0.2em 0.6em; 
+/*  background-color: #4090cb;*/
+  background: linear-gradient(to right, #3990ce 0%,#398ecf 32%,#3a85d3 55%,#3c72dc 78%,#4053eb 100%);
+}
+
+.long-link__second {
+  margin-left: 83px;
+}
+
+/*-------------------------
+Start
+--------------------------*/
+.logo-small {
+  width: 178px;
+  height: 111px;
+  margin-bottom: 30px;
+  float: left;
+}
+
+.page-link {
+  width: 180px;
+  height: 190px;
+  padding-top: 30px;
+  padding-right: 30px;
+}
+
+/*-------------------------
+Background images (can be deleted)
+--------------------------*/
+html {
+  width: 1024px;
+  height: 768px;
+}
+
+.welcomeBG { 
+/*  background: url(details-01.jpg) no-repeat;*/
+  background-size: 1024px 670px;
+  opacity: 1;
+}
+
+/*----------------------------
+seethru links (can be deleted)
+-----------------------------*/
+a.welcome, a.goHome {
+    position: absolute;
+    display: block;
+    background: none;
+    border: 1px solid black;
+    opacity: 0.0;
+}
+.welcome {
+    top: 596px;
+    left: 820px;
+    width: 110px;
+    height: 110px;
+}
+.goHome {
+    left: 935px;
+    width: 46px;
+    top: 20px;
+    height: 40px;
+    opacity: 0.2;
+}
 /*-------------------------
 Human
 --------------------------*/
@@ -212,71 +336,4 @@ Human
 .bang--16 {
   top: 275px;
   left: 139px;
-}
-
-/*-------------------------
-Footer
---------------------------*/
-.footer {
-  color: white;
-  float: right;
-  text-transform: uppercase;
-  padding-top: 432px;
-}
-
-.footer--logo{
-  background-color: #4090cb;
-  font-size: 20px;
-  width: 122px;
-  padding: 0em 0.3em;
-  line-height: 100%
-}
-
-.footer--logo-sub{
-  background-color: #ef8e3b;
-  font-size: 9px;
-  width: 93px;
-  margin-top: 8px;
-  padding: 0.3em 0.6em;
-  
-}
-
-/*-------------------------
-Background images
---------------------------*/
-html {
-  width: 1024px;
-  height: 768px;
-}
-
-.welcomeBG { 
-/*  background: url(index-01.jpg) no-repeat;*/
-  background-size: 1024px 670px;
-  opacity: 1;
-}
-.page1 { 
-    background: url(1setLimits.jpg) no-repeat; 
-}
-/*----------------------------
-seethru links
------------------------------*/
-a.welcome, a.goHome {
-    position: absolute;
-    display: block;
-    background: none;
-    border: 1px solid black;
-    opacity: 0.0;
-}
-.welcome {
-    top: 596px;
-    left: 820px;
-    width: 110px;
-    height: 110px;
-}
-.goHome {
-    left: 935px;
-    width: 46px;
-    top: 20px;
-    height: 40px;
-    opacity: 0.2;
 }

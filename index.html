@@ -9,72 +9,20 @@ class="welcomeBG">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="assets/styles.css" />
     <link rel="stylesheet" type="text/css" href="add-to-homescreen/style/addtohomescreen.css">
-    <script src="js/vendor/angular.min.js"></script>
     <script src="add-to-homescreen/src/addtohomescreen.js"></script>
     <script>
       addToHomescreen();
     </script>
   </head>
 
-  <body ng-app="DrinkInformedApp"
-        class="u-padding-Al">
-    <header>
-      <a class="welcome" href="1setLimits.html">Page2</a>
-      <nav >
-        <a href="index.html"
-           >
-          <img class="header header--sub header--nav"
-               src="assets/StartAgainPageX@2x.png">
-        </a>
-      </nav>
-      <h1 class="header">You scored 20 - 40 on your Audit questions</h1>
-      <p class="header header--sub">
-        Which means you’re at <strong>risk</strong> of developing the following conditions:
-      </p>
-    </header>
-    
-    <main ng-controller="MainController">
-      <div class="human">
-        <img src="assets/body@2x.png"
-             class="img">
-        <button ng-repeat="condition in conditions"
-                ng-click="$parent.activeCondition = $index"
-                class="bang {{'bang--' + $index}}"
-                ng-class="{'is-active': $parent.activeCondition === $index}">
-          ( ! )
-        </button>
-      </div>
-      
-      <div ng-if="activeCondition >= 0">
-        <div class="info">
-          <div class="info__head">
-            <h2 class="info__head__text">{{ conditions[activeCondition].name }}</h2>
-          </div>
-          <img ng-src="{{ conditions[activeCondition].icon }}"
-               class="info__icon">
-          <p class="info__para">{{ conditions[activeCondition].para1 }}</p>
-          <p class="info__para">{{ conditions[activeCondition].para2 }}</p>
-        </div>
-      </div>
-      <div ng-if="activeCondition === -1"
-           class="info-placeholder">
-        <strong>Click on the ! to see the different conditions
-your drinking habits are putting you at risk of
-developing.</strong>
-      </div>
-    </main>
-    
-    <footer class="footer">
-      <span class="footer--logo">Drink <br></span>
-      <span class="footer--logo">informed</span>
-      <p class="footer--logo-sub">Alcohol harm risk</p>
-    </footer>
-    
-    <!-- Modules -->
-    <script src="js/app.js"></script>
+  <body class="u-padding-Axxl">
+    <img class="logo-big"
+         src="assets/LogoBig@2x.png">
+      <a class="long-link"
+         href="start.html">Start</a>
+      <a class="long-link long-link__second"
+         href="details.html">Details</a>
 
-    <!-- Controllers -->
-    <script src="js/controllers/MainController.js"></script>
   </body>
 </html>
 
