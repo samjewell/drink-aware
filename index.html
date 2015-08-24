@@ -22,19 +22,20 @@ class="welcomeBG">
       <a class="welcome" href="1setLimits.html">Page2</a>
       <nav >
         <a href="index.html"
-           class="header header--sub header--nav">
-          Back to start
+           >
+          <img class="header header--sub header--nav"
+               src="assets/StartAgainPageX@2x.png">
         </a>
       </nav>
-      <h1 class="header">You scored 6 out of 40</h1>
+      <h1 class="header">You scored 20 - 40 on your Audit questions</h1>
       <p class="header header--sub">
-        This means you are at slight risk of developing the following conditions:
+        Which means you’re at <strong>risk</strong> of developing the following conditions:
       </p>
     </header>
     
     <main ng-controller="MainController">
       <div class="human">
-        <img src="assets/body-only@2x.png"
+        <img src="assets/body@2x.png"
              class="img">
         <button ng-repeat="condition in conditions"
                 ng-click="$parent.activeCondition = $index"
@@ -45,7 +46,9 @@ class="welcomeBG">
       </div>
       
       <div class="info">
-        <h2 class="info__head">{{ conditions[activeCondition].name }}</h2>
+        <div class="info__head">
+          <h2 class="info__head__text">{{ conditions[activeCondition].name }}</h2>
+        </div>
         <img ng-src="{{ conditions[activeCondition].icon }}"
              class="info__icon">
         <p class="info__para">{{ conditions[activeCondition].para1 }}</p>
