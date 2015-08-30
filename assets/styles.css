@@ -117,26 +117,12 @@ InfoPane
 Footer
 --------------------------*/
 .footer {
-  color: white;
   float: right;
-  text-transform: uppercase;
   padding-top: 432px;
 }
 
-.footer--logo {
-  background-color: #4090cb;
-  font-size: 20px;
-  width: 122px;
-  padding: 0em 0.3em;
-  line-height: 100%;
-}
-
-.footer--logo-sub {
-  background-color: #ef8e3b;
-  font-size: 9px;
-  width: 93px;
-  margin-top: 8px;
-  padding: 0.3em 0.6em; 
+.logo-mini {
+  width: 115px;
 }
 
 /*-------------------------
