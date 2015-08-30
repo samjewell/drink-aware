@@ -1,9 +1,25 @@
-angular
-.module("Page", [])
-.controller('Controller', ['$scope', function($scope) {
+app.controller('PageController', ['$scope', '$routeParams', function($scope, $routeParams) {
+
   $scope.activeCondition = -1;
+
+  var scores = [
+    '0 - 7',
+    '8 - 15',
+    '16 - 19',
+    '20 - 40'
+  ];
+  $scope.score = scores[$routeParams.id];
+
+
+  var conditionsOnEachPage = [
+    3,
+    7,
+    12,
+    17
+  ];
+  var conditionsOnThisPage = conditionsOnEachPage[$routeParams.id];
   
-  $scope.conditions = [
+  var allConditions = [
     {
       name: 'Mental Illness',
       para1: 'Alcohol is a depressant so can cause your mood to become low. It is very easy to slip into a cycle of drinking to depress your feelings which actually is making your depression worse.',
@@ -107,4 +123,6 @@ angular
       icon: 'assets/icons/OesophagealVarices@2x.png'
     }
   ];
+
+  $scope.conditions = allConditions.slice(0, conditionsOnThisPage);
 }]);

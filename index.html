@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html manifest="drink-informed-manifest.appcache"
-class="welcomeBG">
+<html >
+<!-- manifest="drink-informed-manifest.appcache" -->
   <head>
     <meta charset="utf-8" />
     <title>Drink Informed</title>
@@ -8,19 +8,22 @@ class="welcomeBG">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="assets/styles.css" />
     <link rel="stylesheet" type="text/css" href="add-to-homescreen/style/addtohomescreen.css">
+    <script src="js/vendor/angular.min.js"></script>
+    <script src="js/vendor/angular-route.min.js"></script>
     <script src="add-to-homescreen/src/addtohomescreen.js"></script>
     <script>
       addToHomescreen();
     </script>
   </head>
 
-  <body class="u-padding-Axxl">
-    <img class="logo-big"
-         src="assets/LogoBig@2x.png">
-      <a class="long-link"
-         href="start.html">Start</a>
-      <a class="long-link long-link__second"
-         href="details.html">Details</a>
+  <body ng-app="DrinkInformedApp">
+    <div ng-view></div>
+
+    <!-- Modules -->
+    <script src="js/app.js"></script>
+
+    <!-- Controllers -->
+    <script src="js/controllers/PageController.js"></script>
 
   </body>
 </html>
