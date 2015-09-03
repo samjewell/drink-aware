@@ -32,6 +32,11 @@ Utils
 .u-float-right {
   float: right; 
 }
+
+.u-clear-right {
+  clear: right;
+  margin-top: 10px;
+}
 /*-------------------------
 Header
 --------------------------*/
@@ -142,6 +147,11 @@ Index
   display: inline-block;
   padding: 0.2em 0.6em; 
   background: linear-gradient(to right, #3990ce 0%,#398ecf 32%,#3a85d3 55%,#3c72dc 78%,#4053eb 100%);
+}
+
+.long-link__small {
+  width: 180px;
+  height: 35px;
 }
 
 .long-link__second {

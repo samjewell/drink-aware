@@ -94,7 +94,7 @@ app.controller('PageController', ['$scope', '$routeParams', function($scope, $ro
     },
     {
       name: 'Korsakoff‘s Syndrome',
-      para1: 'Korsakoff’s Syndrome is an irreversible condition. If you have Korsakoff’s, your brain may look like the image on the right, not like the healthy brain on the left. As a result of long-term nutrient deficiency, parts of the brain have died. If you have Korsakoff’s you will not form new memories and you will have memory loss. A quarter of people with Korsakoffs end up in residential care homes at an early age for the rest of their lives.',
+      para1: 'Korsakoff’s Syndrome is an irreversible condition. If you have Korsakoff’s, your brain may look like the image shown bottom-right, not like the healthy brain shown top-left. As a result of long-term nutrient deficiency, parts of the brain have died. If you have Korsakoff’s you will not form new memories and you will have memory loss. A quarter of people with Korsakoffs end up in residential care homes at an early age for the rest of their lives.',
       para2: '',
       icon: 'assets/icons/Korsakoffs@2x.png'
     },
